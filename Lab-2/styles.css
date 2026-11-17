@@ -1,12 +1,8 @@
 /* Загальні стилі сторінки */
 body {
-  font-family: Arial, sans-serif;
   color: #333333;
   background-color: #f7f7f7;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  line-height: 1.6;
 }
 
 /* Заголовки */
@@ -18,25 +14,17 @@ h1 {
 h2 {
   color: #c0561a;
   border-bottom: 2px solid #c0561a;
-  padding-bottom: 4px;
 }
 
-/* Зображення, що йдуть прямо в body, вирівнюємо по центру */
-body > img {
+img {
   display: block;
   margin: 16px auto;
 }
 
-/* Посилання */
 a {
   color: #1a4d8f;
 }
 
-a:hover {
-  color: #c0561a;
-}
-
-/* Іконка всередині посилання */
 a img {
   vertical-align: middle;
   border: none;
