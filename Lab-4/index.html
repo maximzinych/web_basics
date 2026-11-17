@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+<h1>Моя перша HTML-форма</h1>
+
+  <!-- Для тестування GET змініть method="GET" та action="https://httpbin.org/get" -->
+  <form action="https://httpbin.org/post" method="POST">
+    <p>
+      <label for="username">Ім'я:</label>
+      <input type="text" id="username" name="username">
+    </p>
+
+    <p>
+      <label for="birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </p>
+
+    <p>
+      <label>
+        Імейл:
+        <input type="email" name="email">
+      </label>
+    </p>
+
+    <!-- Група чекбоксів (можна обрати декілька варіантів) -->
+    <fieldset>
+      <legend>Ваші улюблені напої?</legend>
+      <label><input type="checkbox" name="drinks" value="coffee"> Кава</label><br>
+      <label><input type="checkbox" name="drinks" value="tea"> Чай</label><br>
+      <label><input type="checkbox" name="drinks" value="juice"> Сік</label><br>
+      <label><input type="checkbox" name="drinks" value="water"> Вода</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Моя національність</legend>
+      <label><input type="radio" name="nationality" value="ukrainian"> Українець / Українка</label><br>
+      <label><input type="radio" name="nationality" value="polish"> Поляк / Полька</label><br>
+      <label><input type="radio" name="nationality" value="other"> Інша</label>
+    </fieldset>
+
+    <p>
+      <label>
+        Повідомлення:
+        <textarea name="message"></textarea>
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">Надіслати</button>
+      <button type="reset">Очистити</button>
+    </p>
+  </form>
+
+  <picture>
+    <source media="(max-width: 467px)" srcset="https://picsum.photos/300/500?random=1">
+    <img src="https://picsum.photos/1000/400?random=2" alt="Демонстраційне зображення">
+  </picture>
+  </body>
+</html>
